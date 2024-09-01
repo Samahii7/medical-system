@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Health Detecting System</title>
+    <style>
+      body {
+        background: url('../static/images/doc.jpg') no-repeat center center fixed ;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #333;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        background-color: rgba(226, 128, 8, 0.612);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 40px auto;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgb(61, 2, 240);
+      }
+      h1 {
+        color: #0004ff;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type=text] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=submit], button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      input[type=submit]:hover, button:hover {
+        background-color: #0056b3;
+      }
+      button {
+        margin-left: 10px;
+      }
+      .result-container {
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 8px rgb(1, 250, 237);
+      }
+      .similar-diseases-container{
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color:  rgb(255, 255, 255);
+        box-shadow: 0 4px 8px rgb(255, 0, 111);
+      }
+      h2 {
+        color: #343a40;
+        margin-top: 0;
+      }
+      p {
+        font-size: 1.1em;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+    </style>
+    <script>
+      function fetchSuggestions() {
+        var input = document.getElementById('symptoms').value;
+        var datalist = document.getElementById('symptom-suggestions');
+        datalist.innerHTML = ''; 
+
+        if (input.trim().length > 0) { 
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', '/api/symptom_autocomplete?query=' + encodeURIComponent(input), true);
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var suggestions = JSON.parse(xhr.responseText);
+              suggestions.forEach(function(suggestion) {
+                var option = document.createElement('option');
+                option.value = suggestion;
+                datalist.appendChild(option);
+              });
+            }
+          };
+          xhr.send();
+        }
+      }
+
+      function clearInput() {
+        document.getElementById('symptoms').value = '';
+        document.getElementById('symptom-suggestions').innerHTML = ''; // Clear suggestions
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Health Detecting System</h1>
+      <form action="/api/check_symptoms" method="post">
+        <label for="symptoms">Enter Symptoms:</label>
+        <input type="text" id="symptoms" name="symptoms" placeholder="Enter Symptoms...." list="symptom-suggestions" oninput="fetchSuggestions()" required>
+        <button type="button" onclick="clearInput()">Cancel</button>
+        <input type="submit" value="Check Disease">
+        <datalist id="symptom-suggestions"></datalist>
+      </form>
+
+      <!-- New Google Search Form -->
+      <form id="google-search-form" method="GET" action="https://www.google.com/search" target="_blank" style="margin-top: 20px;">
+        <label for="google-search">Search for an unknown disease:</label>
+        <input type="text" id="google-search" name="q" placeholder="Type disease name..." required>
+        <input type="submit" value="Search Disease">
+      </form>
+      
+      {% if result %}
+      <div class="result-container">
+        <h2>Result</h2>
+        <p><strong>Disease:</strong> {{ result['disease'] }}</p>
+        <p><strong>Description:</strong> {{ result['description'] }}</p>
+        <p><strong>Medicine:</strong> {{ result['medicine'] }}</p>
+      </div>
+      
+      <div class="similar-diseases-container">
+        <h2>Similar Diseases</h2>
+        <ul>
+          {% for disease in result['similar_diseases'] %}
+            <li><u><strong>{{ disease['disease'] }}:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

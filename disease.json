@@ -1,0 +1,217 @@
+{
+    "cough,fever": {
+        "disease": "Common Cold",
+        "description": "The common cold is a viral infection of the upper respiratory tract. It is usually caused by rhinoviruses. Symptoms include runny nose, sore throat, cough, congestion, mild body aches, and fever. The cold virus is transmitted through airborne droplets or by direct contact with contaminated surfaces. Although generally mild, it can cause significant discomfort. The illness typically resolves in about a week to ten days. Complications are rare but can include sinus infections or middle ear infections. Rest, hydration, and over-the-counter medications can help alleviate symptoms. Antibiotics are not effective as colds are caused by viruses. Preventive measures include frequent handwashing, avoiding close contact with infected individuals, and maintaining a healthy immune system.",
+        "medicine": "Rest, fluids, and over-the-counter cold remedies like decongestants, antihistamines, and pain relievers. Avoiding antibiotics unless prescribed for secondary bacterial infections."
+    },
+    "cough,fever,shortness of breath": {
+        "disease": "COVID-19",
+        "description": "COVID-19 is caused by the SARS-CoV-2 virus and primarily affects the respiratory system. Symptoms range from mild to severe and include cough, fever, and shortness of breath. Transmission occurs through respiratory droplets, and the virus can also be spread via contaminated surfaces. The disease has a broad spectrum of severity, from asymptomatic cases to severe pneumonia and death. Individuals with underlying health conditions or the elderly are at higher risk. Preventive measures include vaccination, mask-wearing, physical distancing, and frequent handwashing. Treatment varies based on severity and can include rest, hydration, and antiviral medications. Severe cases may require hospitalization and advanced treatments.",
+        "medicine": "Rest, hydration, and antivirals like remdesivir. Severe cases may require hospitalization, oxygen therapy, and mechanical ventilation. Vaccination is crucial for prevention."
+    },
+    "fever,headache,muscle pain,fatigue": {
+        "disease": "Influenza (Flu)",
+        "description": "Influenza is a contagious respiratory illness caused by influenza viruses. Symptoms include fever, cough, sore throat, muscle aches, headaches, and fatigue. The flu spreads via respiratory droplets and can also be transmitted by touching contaminated surfaces. It can lead to serious complications such as pneumonia, especially in high-risk groups. Annual flu vaccination is the primary prevention method. Treatment includes antiviral medications, rest, hydration, and symptom management with over-the-counter medications. Most people recover within a week or two, but some may experience prolonged symptoms.",
+        "medicine": "Antiviral drugs like oseltamivir, rest, fluids, and over-the-counter medications for symptom relief. Preventive vaccination is recommended annually."
+    },
+    "chest pain,shortness of breath,sweating,nausea": {
+        "disease": "Heart Attack",
+        "description": "A heart attack occurs when blood flow to the heart muscle is blocked, usually by a blood clot. Symptoms can include chest pain, shortness of breath, sweating, and nausea. The condition can result from coronary artery disease or other heart conditions. Immediate treatment is crucial to restore blood flow and minimize heart damage. Risk factors include high blood pressure, high cholesterol, smoking, and diabetes. Treatment often involves medications, lifestyle changes, and sometimes procedures like angioplasty. Long-term management includes heart-healthy lifestyle changes and regular follow-ups.",
+        "medicine": "Medications like aspirin, beta-blockers, ACE inhibitors, and statins. Immediate interventions may include angioplasty or coronary artery bypass surgery. Lifestyle modifications are essential for prevention."
+    },
+    "fatigue,weight gain,cold intolerance,constipation": {
+        "disease": "Hypothyroidism",
+        "description": "Hypothyroidism occurs when the thyroid gland does not produce enough thyroid hormones. Symptoms include fatigue, weight gain, cold intolerance, and constipation. The condition can slow down the body's metabolism and affect various systems. It can be caused by autoimmune diseases like Hashimoto's thyroiditis or by certain medications. Diagnosis is confirmed through blood tests measuring thyroid hormone levels. Treatment involves daily thyroid hormone replacement therapy. Regular monitoring is required to ensure adequate hormone levels and to adjust medication dosages as needed.",
+        "medicine": "Thyroid hormone replacement therapy, such as levothyroxine. Regular monitoring and dose adjustments are necessary to manage the condition effectively."
+    },
+    "abdominal pain,bloating,diarrhea,weight loss": {
+        "disease": "Celiac Disease",
+        "description": "Celiac disease is an autoimmune disorder where ingestion of gluten leads to inflammation of the small intestine. Symptoms include abdominal pain, bloating, diarrhea, and weight loss. It can also cause anemia, osteoporosis, and neurological symptoms. The disease is diagnosed through blood tests and a biopsy of the small intestine. The only effective treatment is a strict, lifelong gluten-free diet, which allows the intestine to heal and symptoms to resolve. Avoiding gluten-containing foods is crucial for managing the disease and preventing complications.",
+        "medicine": "A strict, lifelong gluten-free diet. Nutritional supplements may be necessary to address deficiencies caused by malabsorption."
+    },
+    "high fever,chills,sweats,headache,nausea,vomiting": {
+        "disease": "Malaria",
+        "description": "Malaria is caused by parasites transmitted through the bites of infected Anopheles mosquitoes. Symptoms include high fever, chills, sweats, headache, nausea, and vomiting. It can also lead to severe complications like anemia and organ failure. Malaria is common in tropical and subtropical regions. Diagnosis is made through blood tests that detect the presence of malaria parasites. Treatment involves antimalarial medications, which are chosen based on the type of malaria and its severity. Preventive measures include the use of insect repellent, bed nets, and antimalarial drugs in endemic areas.",
+        "medicine": "Antimalarial medications such as chloroquine, artemisinin-based combination therapies (ACTs), and supportive care. Preventive measures include mosquito avoidance and prophylactic antimalarials in high-risk areas."
+    },
+    
+    "fever,rash,joint pain,red eyes,headache": {
+        "disease": "Zika Virus",
+        "description": "Zika virus is transmitted by Aedes mosquitoes and can cause symptoms such as fever, rash, joint pain, red eyes, and headache. The virus is also associated with birth defects, particularly microcephaly, when pregnant women are infected. Zika virus infection is typically mild and may go unnoticed. Diagnosis is confirmed through blood tests. There is no specific treatment for Zika virus, and management focuses on relieving symptoms. Preventive measures include avoiding mosquito bites and eliminating mosquito breeding sites. Pregnant women are advised to take extra precautions to avoid infection.",
+        "medicine": "Supportive care includes rest, fluids, and pain relievers like acetaminophen. Avoiding mosquito bites is crucial for prevention."
+    },
+    "painful urination,frequent urination,cloudy urine,abdominal pain": {
+        "disease": "Urinary Tract Infection (UTI)",
+        "description": "A urinary tract infection (UTI) occurs when bacteria enter the urinary tract and multiply. Symptoms can include painful urination, frequent urge to urinate, cloudy or strong-smelling urine, and abdominal pain. UTIs can affect any part of the urinary system, including the bladder, kidneys, and urethra. Diagnosis is based on urine tests. Treatment usually involves antibiotics to eliminate the infection. Increasing fluid intake and urination can help flush out bacteria. UTIs are more common in women but can occur in men and children as well. Prevention includes proper hygiene and, in some cases, prophylactic antibiotics for recurrent infections.",
+        "medicine": "Antibiotics like trimethoprim-sulfamethoxazole or ciprofloxacin. Increasing hydration and urination can aid in clearing the infection."
+    },
+    "shortness of breath,wheezing,chest tightness,cough": {
+        "disease": "Asthma",
+        "description": "Asthma is a chronic inflammatory disease of the airways characterized by reversible airway obstruction. Symptoms include shortness of breath, wheezing, chest tightness, and coughing. Asthma attacks can be triggered by allergens, respiratory infections, exercise, and environmental factors. Diagnosis is made through clinical assessment and spirometry tests. Management includes avoiding triggers, using inhalers (both relievers and preventers), and medications to control inflammation and symptoms. Regular monitoring and personalized treatment plans are essential to managing asthma effectively.",
+        "medicine": "Inhalers containing bronchodilators and corticosteroids. Long-term control medications may include leukotriene receptor antagonists and combination inhalers."
+    },
+    
+    "frequent thirst,frequent urination,extreme hunger,fatigue": {
+        "disease": "Diabetes Mellitus",
+        "description": "Diabetes mellitus is a chronic condition that affects the body's ability to regulate blood glucose levels. It primarily impacts the endocrine system, involving the pancreas and insulin production or action. Symptoms include frequent thirst, frequent urination, extreme hunger, and fatigue.",
+        "medicine": "Insulin therapy for Type 1 diabetes, oral hypoglycemic agents for Type 2 diabetes such as metformin (Glucophage) and sulfonylureas (e.g., glipizide). Lifestyle changes including diet and exercise are also crucial."
+    },
+    "persistent cough,shortness of breath,excessive mucus production": {
+        "disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+        "description": "COPD is a group of progressive lung diseases including chronic bronchitis and emphysema. It affects the lungs, leading to obstruction of airflow and difficulty breathing. Symptoms include persistent cough, shortness of breath, and excessive mucus production.",
+        "medicine": "Medications include bronchodilators such as albuterol (Proventil), inhaled corticosteroids like fluticasone (Flovent), and long-acting beta agonists (e.g., salmeterol). Oxygen therapy and smoking cessation are essential."
+    },
+    "joint pain,stiffness,swelling,morning stiffness": {
+        "disease": "Rheumatoid Arthritis",
+        "description": "Rheumatoid arthritis is an autoimmune disorder that primarily affects the joints, leading to pain, stiffness, swelling, and joint damage. It can also cause morning stiffness and fatigue, affecting the synovium of joints throughout the body.",
+        "medicine": "Disease-modifying antirheumatic drugs (DMARDs) like methotrexate (Rheumatrex), biological agents such as TNF inhibitors (e.g., etanercept), and nonsteroidal anti-inflammatory drugs (NSAIDs) like ibuprofen."
+    },
+    "abdominal pain,cramping,diarrhea,weight loss": {
+        "disease": "Irritable Bowel Syndrome (IBS)",
+        "description": "IBS is a functional gastrointestinal disorder affecting the intestines. Symptoms include abdominal pain, cramping, diarrhea, and weight loss. It is characterized by changes in bowel habits and is not associated with structural abnormalities.",
+        "medicine": "Medications to manage symptoms include antidiarrheals such as loperamide (Imodium), laxatives (e.g., polyethylene glycol), antispasmodics like hyoscyamine, and dietary changes such as a low FODMAP diet."
+    },
+    "red,itchy skin,dry patches,blisters": {
+        "disease": "Eczema",
+        "description": "Eczema, or atopic dermatitis, is a chronic skin condition affecting the epidermis and dermis. It is characterized by red, itchy, inflamed skin, with dry patches and blisters. It often occurs in individuals with a history of other allergic conditions.",
+        "medicine": "Treatment includes topical corticosteroids such as hydrocortisone, moisturizers, and avoiding triggers. In severe cases, oral medications like prednisone and phototherapy may be used."
+    },
+    "dizziness,ringing in ears,hearing loss,vertigo": {
+        "disease": "Meniere's Disease",
+        "description": "Meniere's disease is an inner ear disorder that affects balance and hearing. It is characterized by episodes of vertigo, tinnitus (ringing in the ears), hearing loss, and a feeling of fullness in the ear. It results from fluid buildup in the inner ear.",
+        "medicine": "Diuretics like hydrochlorothiazide, anti-nausea medications such as meclizine, and lifestyle changes such as a low-sodium diet. In severe cases, surgical interventions like endolymphatic sac decompression may be considered."
+    },
+    "severe headaches,nausea,vomiting,sensitivity to light": {
+        "disease": "Migraine",
+        "description": "Migraine is a neurological condition characterized by severe, recurrent headaches that often affect one side of the head. It is accompanied by symptoms such as nausea, vomiting, and sensitivity to light (photophobia). It can be triggered by various factors including stress and dietary choices.",
+        "medicine": "Treatment includes abortive medications like triptans (e.g., sumatriptan) and preventive medications such as beta-blockers (e.g., propranolol) and anticonvulsants (e.g., topiramate). Lifestyle changes and identifying triggers are also important."
+    },
+    "abdominal pain,fever,nausea,vomiting": {
+        "disease": "Appendicitis",
+        "description": "Appendicitis is an inflammation of the appendix, affecting the lower right abdomen. Symptoms include abdominal pain starting near the navel and moving to the lower right side, fever, nausea, and vomiting. It is usually caused by an obstruction or infection.",
+        "medicine": "The primary treatment is surgical removal of the appendix (appendectomy). Antibiotics such as ciprofloxacin and metronidazole are given to manage infection. Early treatment is critical to prevent complications."
+    },
+    "persistent cough,shortness of breath,weight loss": {
+        "disease": "Lung Cancer",
+        "description": "Lung cancer is a malignant tumor in the lungs that affects the respiratory system. Symptoms include a persistent cough, shortness of breath, weight loss, and sometimes hemoptysis (coughing up blood). It is often linked to smoking and exposure to carcinogens.",
+        "medicine": "Treatment options vary by stage and include surgery, radiation therapy, chemotherapy (e.g., cisplatin), and targeted therapies (e.g., erlotinib). The choice of treatment depends on the cancer stage and overall health."
+    
+    },  
+"persistent headache,nausea,vomiting,sensitivity to light": {
+    "disease": "Cluster Headache",
+    "description": "Cluster headaches are severe, recurrent headaches that occur in cyclical patterns or clusters. They are characterized by intense pain on one side of the head, often around the eye, and can be accompanied by symptoms such as nausea, vomiting, and sensitivity to light. They tend to occur in episodes, with headaches occurring daily for weeks or months followed by periods of remission.",
+    "medicine": "Acute treatments include high-flow oxygen therapy and triptans (e.g., sumatriptan). Preventive treatments may include verapamil, corticosteroids, and lithium. Lifestyle adjustments and avoiding triggers are also recommended."
+},
+"painful rash,fever,blisters,itchiness": {
+    "disease": "Shingles",
+    "description": "Shingles is a viral infection caused by the varicella-zoster virus, which also causes chickenpox. It is characterized by a painful, blistering rash that typically appears on one side of the body. Other symptoms include fever, headache, and itching. Shingles is more common in older adults and those with weakened immune systems.",
+    "medicine": "Antiviral medications such as acyclovir, valacyclovir, or famciclovir can reduce the severity and duration of the infection. Pain relief medications and corticosteroids may also be used to manage symptoms."
+},
+"painful joints,morning stiffness,swelling,fever": {
+    "disease": "Systemic Lupus Erythematosus (SLE)",
+    "description": "Systemic lupus erythematosus is an autoimmune disease that affects multiple organs, including the skin, joints, kidneys, and heart. Symptoms can vary widely but often include joint pain and swelling, morning stiffness, fever, and skin rashes. It is characterized by periods of flare-ups and remissions.",
+    "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs), corticosteroids, and disease-modifying antirheumatic drugs (DMARDs) like hydroxychloroquine. Immunosuppressants may be used for severe cases."
+},
+"red,swollen,itchy eyes,watery discharge": {
+    "disease": "Conjunctivitis (Pink Eye)",
+    "description": "Conjunctivitis is an inflammation of the conjunctiva, the thin membrane covering the white part of the eye and the inside of the eyelids. It can be caused by infections, allergies, or irritants. Symptoms include red, swollen, itchy eyes with watery or mucous discharge.",
+    "medicine": "Treatment depends on the cause: antihistamines for allergic conjunctivitis, antibiotics for bacterial infections, and antiviral medications for viral conjunctivitis. Keeping the eyes clean and avoiding irritants are also recommended."
+},
+"chronic diarrhea,abdominal cramping,weight loss": {
+    "disease": "Crohn's Disease",
+    "description": "Crohn's disease is a type of inflammatory bowel disease (IBD) that can affect any part of the digestive tract. Symptoms include chronic diarrhea, abdominal cramping, weight loss, and sometimes fever. It is a chronic condition with periods of flare-ups and remissions.",
+    "medicine": "Treatment may include anti-inflammatory drugs such as mesalamine, immunosuppressants like azathioprine, and biologics such as infliximab. Nutritional support and sometimes surgery may be needed for severe cases."
+},
+"painful swallowing,hoarseness,frequent throat clearing,globus sensation": {
+    "disease": "Gastroesophageal Reflux Disease (GERD)",
+    "description": "GERD is a chronic digestive condition where stomach acid frequently flows back into the esophagus, causing irritation. Symptoms include painful swallowing, hoarseness, frequent throat clearing, and a sensation of a lump in the throat (globus).",
+    "medicine": "Treatment includes antacids, H2 receptor antagonists, and proton pump inhibitors (PPIs) to reduce stomach acid. Lifestyle changes such as diet modification and avoiding triggers are also recommended."
+},
+"abdominal bloating,frequent belching,nausea,burping": {
+    "disease": "Functional Dyspepsia",
+    "description": "Functional dyspepsia is a common digestive disorder characterized by upper abdominal discomfort or pain, bloating, frequent belching, nausea, and sometimes burping. It is not associated with any structural abnormalities or underlying disease.",
+    "medicine": "Treatment includes dietary changes, antacids, H2 receptor antagonists, and proton pump inhibitors. Lifestyle modifications such as reducing stress and avoiding trigger foods are also beneficial."
+},
+"painful,swollen joints,redness,fever": {
+    "disease": "Septic Arthritis",
+    "description": "Septic arthritis is a joint infection caused by bacteria, viruses, or fungi. It leads to symptoms such as joint pain, swelling, redness, and fever. The infection can damage the joint if not treated promptly.",
+    "medicine": "Treatment involves antibiotics to target the specific pathogen causing the infection. In some cases, joint drainage or surgery may be needed. Pain relief and anti-inflammatory medications can also help manage symptoms."
+},
+"rash,fever,joint pain,malaise": {
+    "disease": "Dengue Fever",
+    "description": "Dengue fever is a viral illness transmitted by mosquitoes. Symptoms include a high fever, rash, joint pain, muscle pain, and malaise. In severe cases, dengue can lead to bleeding and low blood pressure.",
+    "medicine": "There is no specific antiviral treatment for dengue fever. Management focuses on supportive care, including hydration and pain relief with acetaminophen. Avoiding mosquito bites is crucial for prevention."
+},
+"painful,red,swollen legs,fever,deep vein tenderness": {
+    "disease": "Deep Vein Thrombosis (DVT)",
+    "description": "DVT occurs when a blood clot forms in a deep vein, usually in the legs. Symptoms can include painful, red, swollen legs, fever, and tenderness in the affected area. It can lead to serious complications if the clot breaks loose and travels to the lungs.",
+    "medicine": "Treatment includes anticoagulants (blood thinners) like warfarin or rivaroxaban. In some cases, thrombolytics to dissolve the clot or surgical interventions may be needed. Compression stockings and lifestyle changes may help prevent recurrence."
+            
+            },
+"painful joints,redness,swelling,fever": {
+    "disease": "Gout",
+    "description": "Gout is a type of inflammatory arthritis caused by the buildup of uric acid crystals in the joints. It often affects the big toe but can involve other joints. Symptoms include sudden, severe pain, redness, swelling, and tenderness in the affected joint.",
+    "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs) like indomethacin, colchicine, and corticosteroids for pain relief and inflammation. Long-term management may involve medications to lower uric acid levels, such as allopurinol."
+},
+"fever,joint pain,red rash,headache": {
+    "disease": "Rheumatic Fever",
+    "description": "Rheumatic fever is a complication of untreated streptococcal throat infection, which can cause inflammation in the heart, joints, skin, and brain. Symptoms include fever, joint pain, rash, and headache. It can lead to rheumatic heart disease if not treated properly.",
+    "medicine": "Treatment includes antibiotics to eradicate the streptococcal infection, anti-inflammatory medications such as aspirin or corticosteroids, and sometimes heart medications depending on the severity of heart involvement."
+},
+"skin rash,itchiness,fever,swollen lymph nodes": {
+    "disease": "Measles",
+    "description": "Measles is a highly contagious viral disease characterized by a distinctive rash, high fever, cough, runny nose, and conjunctivitis. It can lead to serious complications, including pneumonia and encephalitis.",
+    "medicine": "Treatment includes supportive care such as rest, hydration, and fever management with antipyretics. Vitamin A supplementation is recommended for children. Vaccination is crucial for prevention."
+},
+"painful urination,lower abdominal pain,blood in urine,fever": {
+    "disease": "Kidney Stones",
+    "description": "Kidney stones are hard deposits of minerals and salts that form in the kidneys. Symptoms include severe pain in the back or side, painful urination, blood in the urine, and sometimes fever if an infection is present.",
+    "medicine": "Treatment involves pain management with NSAIDs, hydration to help pass the stones, and medications to help break up the stones. In some cases, procedures like shock wave lithotripsy or surgery may be needed to remove larger stones."
+},
+"sudden weight loss,thirst,frequent urination,fatigue": {
+    "disease": "Type 1 Diabetes Mellitus",
+    "description": "Type 1 diabetes is a chronic autoimmune condition where the immune system attacks insulin-producing cells in the pancreas. Symptoms include sudden weight loss, extreme thirst, frequent urination, and fatigue.",
+    "medicine": "Treatment involves lifelong insulin therapy to regulate blood glucose levels, along with monitoring blood glucose levels regularly. Dietary management and regular exercise are also essential."
+},
+"persistent cough,fever,night sweats,weight loss": {
+    "disease": "Tuberculosis (TB)",
+    "description": "Tuberculosis is a bacterial infection caused by Mycobacterium tuberculosis. It primarily affects the lungs and is characterized by a persistent cough, fever, night sweats, and weight loss. It spreads through airborne droplets.",
+    "medicine": "Treatment involves a regimen of antibiotics for several months, typically including isoniazid, rifampin, ethambutol, and pyrazinamide. Directly observed therapy (DOT) is often used to ensure compliance."
+},
+"red,swollen,itchy skin,cracking,blisters": {
+    "disease": "Contact Dermatitis",
+    "description": "Contact dermatitis is an inflammatory skin condition caused by exposure to allergens or irritants. Symptoms include red, swollen, itchy skin, and sometimes blisters or cracks. It can be acute or chronic.",
+    "medicine": "Treatment involves avoiding the offending substance, using topical corticosteroids to reduce inflammation, and applying emollients to soothe the skin. Oral antihistamines may help with itching."
+},
+"severe abdominal pain,vomiting,fever,jaundice": {
+    "disease": "Cholecystitis",
+    "description": "Cholecystitis is inflammation of the gallbladder, often due to gallstones. Symptoms include severe abdominal pain, nausea, vomiting, fever, and jaundice. It can lead to complications like gallbladder rupture if untreated.",
+    "medicine": "Treatment typically includes antibiotics for infection, pain management, and sometimes surgery (cholecystectomy) to remove the gallbladder. Dietary modifications may also be recommended."
+},
+"painful,swollen gums,loose teeth,bad breath": {
+    "disease": "Periodontitis",
+    "description": "Periodontitis is a serious gum infection that damages the soft tissue and, without treatment, can destroy the bone that supports your teeth. Symptoms include swollen, bleeding gums, bad breath, and loose teeth.",
+    "medicine": "Treatment involves professional dental cleanings, scaling and root planing, and sometimes surgical procedures. Maintaining good oral hygiene and regular dental visits are crucial for managing the condition."
+},
+"severe abdominal pain,nausea,vomiting,fever": {
+    "disease": "Pancreatitis",
+    "description": "Pancreatitis is inflammation of the pancreas, which can be acute or chronic. Symptoms include severe abdominal pain, nausea, vomiting, and fever. It can be caused by gallstones, chronic and heavy alcohol use, or certain medications.",
+    "medicine": "Treatment includes hospitalization for supportive care, pain management, and intravenous fluids. The underlying cause must be addressed, such as treating gallstones or managing alcohol intake. In some cases, surgery may be needed."
+},
+"constant fatigue,unintentional weight loss,difficulty sleeping,fever": {
+    "disease": "Chronic Fatigue Syndrome",
+    "description": "Chronic fatigue syndrome (CFS) is a complex disorder characterized by persistent, unexplained fatigue that does not improve with rest and worsens with physical or mental activity. Other symptoms can include unintentional weight loss, difficulty sleeping, and fever.",
+    "medicine": "There is no specific treatment for CFS. Management focuses on relieving symptoms and may include cognitive behavioral therapy (CBT), medications for pain and sleep disturbances, and lifestyle modifications to balance activity and rest."
+}
+}
+    
+
+
+
+
+
+
+
+
+
+

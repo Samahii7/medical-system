@@ -4,7 +4,6 @@ from textblob import Word
 from difflib import get_close_matches
 import re
 
-
 app = Flask(__name__)
 
 with open('disease.json') as f:
@@ -124,4 +123,4 @@ def symptom_autocomplete():
     return jsonify(matches)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.o",port=5000,debug=True)

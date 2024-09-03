@@ -513,12 +513,8 @@
     "description": "Neuroborreliosis is a neurological manifestation of Lyme disease, caused by the bacterium Borrelia burgdorferi. Symptoms include fever, joint pain, swollen lymph nodes, and rash.",
     "medicine": "Antibiotics such as doxycycline or ceftriaxone are used to treat neuroborreliosis. Early treatment is important to prevent long-term neurological damage."
 },
+
 "fever,headache,muscle pain,joint pain": {
-    "disease": "Nocardiosis",
-    "description": "Nocardiosis is a rare bacterial infection caused by Nocardia species. Symptoms include fever, headache, muscle pain, and joint pain. It can affect the lungs, skin, and brain.",
-    "medicine": "Treatment typically involves antibiotics such as trimethoprim-sulfamethoxazole or amikacin. Managing symptoms and addressing any underlying health conditions is also important."
-}
-,"fever,headache,muscle pain,joint pain": {
     "disease": "Osteomyelitis",
     "description": "Osteomyelitis is an infection of the bone that can be acute or chronic. Symptoms include fever, headache, muscle pain, and joint pain.",
     "medicine": "Treatment involves antibiotics targeted at the infecting organism and, in some cases, surgical intervention to remove infected tissue. Pain management and supportive care are also important."
@@ -528,32 +524,20 @@
     "description": "Onchocerciasis, or river blindness, is a parasitic disease caused by Onchocerca volvulus. Symptoms include fever, chronic cough, shortness of breath, and weight loss. It can lead to severe skin and eye complications.",
     "medicine": "Ivermectin is the primary treatment for onchocerciasis. Community-wide treatment programs are often used to control and prevent the disease."
 }
-,"fever,cough,chest pain,difficulty breathing": {
-    "disease": "Pneumocystis Pneumonia (PCP)",
-    "description": "Pneumocystis pneumonia is a form of pneumonia caused by the Pneumocystis jirovecii fungus, often seen in immunocompromised individuals. Symptoms include fever, cough, chest pain, and difficulty breathing.",
-    "medicine": "Treatment includes antibiotics such as trimethoprim-sulfamethoxazole. Supportive care, including oxygen therapy, may also be required."
-},
+,
 "fever,skin rash,joint pain,swollen lymph nodes": {
     "disease": "Primary Sjögren's Syndrome",
     "description": "Primary Sjögren's syndrome is an autoimmune disorder characterized by dry mouth and eyes. Symptoms may also include fever, skin rash, joint pain, and swollen lymph nodes.",
     "medicine": "Management includes symptomatic treatments such as artificial tears and saliva substitutes. Immunosuppressive drugs may be used in more severe cases."
 }
-,"fever,chronic cough,weight loss,night sweats": {
-    "disease": "QuantiFERON-TB Positive Test",
-    "description": "A positive QuantiFERON-TB test indicates exposure to Mycobacterium tuberculosis, which causes tuberculosis. Symptoms may include fever, chronic cough, weight loss, and night sweats.",
-    "medicine": "Treatment involves a regimen of antibiotics such as isoniazid, rifampin, and ethambutol, depending on the stage and severity of the disease."
-}
+
 ,"fever,skin rash,muscle pain,joint pain": {
     "disease": "Rocky Mountain Spotted Fever",
     "description": "Rocky Mountain spotted fever is a tick-borne illness caused by Rickettsia rickettsii. Symptoms include fever, skin rash, muscle pain, and joint pain.",
     "medicine": "Doxycycline is the primary treatment. Early antibiotic treatment is crucial for preventing severe complications."
 },
-"fever,skin rash,swollen lymph nodes,joint pain": {
-    "disease": "Rheumatic Fever",
-    "description": "Rheumatic fever is a complication of untreated strep throat that can affect the heart, joints, skin, and brain. Symptoms include fever, skin rash, swollen lymph nodes, and joint pain.",
-    "medicine": "Treatment involves antibiotics to eliminate the streptococcal bacteria, as well as anti-inflammatory medications to manage symptoms and prevent recurrence."
-}
-,"fever,skin rash,swollen lymph nodes,muscle pain": {
+
+"fever,skin rash,swollen lymph nodes,muscle pain": {
     "disease": "Systemic Sclerosis (Scleroderma)",
     "description": "Systemic sclerosis, or scleroderma, is an autoimmune disease characterized by the hardening and tightening of skin and connective tissues. Symptoms include fever, skin rash, swollen lymph nodes, and muscle pain.",
     "medicine": "Treatment focuses on managing symptoms and may include immunosuppressive drugs, corticosteroids, and medications to improve blood flow."
@@ -652,11 +636,7 @@
     "description": "Cardiomyopathy refers to diseases of the heart muscle that make it harder for the heart to pump blood to the rest of the body.",
     "medicine": "Treatment options include medications, implanted devices, and surgery depending on the type of cardiomyopathy."
 },
-"fever,headache,stiff neck,sensitivity to light,nausea": {
-    "disease": "Cryptococcal Meningitis",
-    "description": "Cryptococcal meningitis is a severe form of meningitis caused by Cryptococcus fungi, often affecting people with weakened immune systems.",
-    "medicine": "Treatment involves antifungal drugs like amphotericin B and flucytosine."
-},
+
 "itching,swelling,redness,fever,chills": {
     "disease": "Cellulitis",
     "description": "Cellulitis is a common bacterial skin infection that causes redness, swelling, and pain in the affected area.",
@@ -900,7 +880,6 @@
 
 }
     
-
 
 
 

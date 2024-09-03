@@ -6,7 +6,7 @@
     <title>Health Detecting System</title>
     <style>
       body {
-        background: url('../static/images/doc.jpg') no-repeat center center fixed ;
+        background: url('../static/images/doc.jpg') no-repeat center center fixed;
         background-size: cover;
         font-family: Arial, sans-serif;
         color: #333;
@@ -35,9 +35,10 @@
         width: calc(100% - 22px);
         padding: 10px;
         margin-bottom: 20px;
-        border: 1px solid #ddd;
+        border: 3px solid #ddd;
         border-radius: 4px;
         box-sizing: border-box;
+        outline: none;
       }
       input[type=submit], button {
         background-color: #007bff;
@@ -61,11 +62,11 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0 4px 8px rgb(1, 250, 237);
       }
-      .similar-diseases-container{
+      .similar-diseases-container {
         margin-top: 20px;
         padding: 20px;
         border-radius: 8px;
-        background-color:  rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
         box-shadow: 0 4px 8px rgb(255, 0, 111);
       }
       h2 {
@@ -86,71 +87,86 @@
       li:last-child {
         border-bottom: none;
       }
+      .disease-link {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .disease-link:hover {
+        text-decoration: underline;
+      }
     </style>
     <script>
       function fetchSuggestions() {
-        var input = document.getElementById('symptoms').value;
-        var datalist = document.getElementById('symptom-suggestions');
-        datalist.innerHTML = ''; 
+          var input = document.getElementById('symptoms').value;
+          var datalist = document.getElementById('symptom-suggestions');
+          datalist.innerHTML = ''; // Clear previous suggestions
 
-        if (input.trim().length > 0) { 
-          var xhr = new XMLHttpRequest();
-          xhr.open('GET', '/api/symptom_autocomplete?query=' + encodeURIComponent(input), true);
-          xhr.onload = function() {
-            if (xhr.status === 200) {
-              var suggestions = JSON.parse(xhr.responseText);
-              suggestions.forEach(function(suggestion) {
-                var option = document.createElement('option');
-                option.value = suggestion;
-                datalist.appendChild(option);
-              });
-            }
-          };
-          xhr.send();
-        }
+          if (input.trim().length > 0) {  // Only fetch suggestions if the input is not empty
+              var xhr = new XMLHttpRequest();
+              xhr.open('GET', '/api/symptom_autocomplete?query=' + encodeURIComponent(input), true);
+              xhr.onload = function() {
+                  if (xhr.status === 200) {
+                      var suggestions = JSON.parse(xhr.responseText);
+                      suggestions.forEach(function(suggestion) {
+                          var option = document.createElement('option');
+                          option.value = suggestion;
+                          datalist.appendChild(option);
+                      });
+                  }
+              };
+              xhr.send();
+          }
       }
 
       function clearInput() {
-        document.getElementById('symptoms').value = '';
-        document.getElementById('symptom-suggestions').innerHTML = ''; // Clear suggestions
+          document.getElementById('symptoms').value = '';
+          document.getElementById('symptom-suggestions').innerHTML = ''; // Clear suggestions
       }
-    </script>
-  </head>
-  <body>
-    <div class="container">
+
+      function searchGoogle(diseaseName) {
+            if (diseaseName && diseaseName !== "No disease found") {
+                window.open('https://www.google.com/search?q=' + encodeURIComponent(diseaseName), '_blank');
+            } else {
+                alert("No valid disease name to search.");
+            }
+      function handleDiseaseLinkClick(diseaseName, hasSimilarDiseases) {
+            if (hasSimilarDiseases) {
+                searchGoogle(diseaseName);
+            } else {
+                return false; 
+            }
+        }
+      }
+  </script>
+</head>
+<body>
+  <div class="container">
       <h1>Health Detecting System</h1>
       <form action="/api/check_symptoms" method="post">
-        <label for="symptoms">Enter Symptoms:</label>
-        <input type="text" id="symptoms" name="symptoms" placeholder="Enter Symptoms...." list="symptom-suggestions" oninput="fetchSuggestions()" required>
-        <button type="button" onclick="clearInput()">Cancel</button>
-        <input type="submit" value="Check Disease">
-        <datalist id="symptom-suggestions"></datalist>
+          <label for="symptoms">Enter Symptoms:</label>
+          <input type="text" id="symptoms" name="symptoms" placeholder="Enter Symptoms...." list="symptom-suggestions" oninput="fetchSuggestions()" required>
+          <button type="button" onclick="clearInput()">Cancel</button>
+          <input type="submit" value="Check Disease">
+          <datalist id="symptom-suggestions"></datalist>
       </form>
 
-      <!-- New Google Search Form -->
-      <form id="google-search-form" method="GET" action="https://www.google.com/search" target="_blank" style="margin-top: 20px;">
-        <label for="google-search">Search for an unknown disease:</label>
-        <input type="text" id="google-search" name="q" placeholder="Type disease name..." required>
-        <input type="submit" value="Search Disease">
-      </form>
-      
       {% if result %}
       <div class="result-container">
-        <h2>Result</h2>
-        <p><strong>Disease:</strong> {{ result['disease'] }}</p>
-        <p><strong>Description:</strong> {{ result['description'] }}</p>
-        <p><strong>Medicine:</strong> {{ result['medicine'] }}</p>
+          <h2>Result</h2>
+          <p><strong>Disease:</strong> <a href="#" class="disease-link" onclick="searchGoogle(`{{ result['disease'] }}`)">{{ result['disease'] }}</a></p>
+          <p><strong>Description:</strong> {{ result['description'] }}</p>
+          <p><strong>Medicine:</strong> {{ result['medicine'] }}</p>
       </div>
       
       <div class="similar-diseases-container">
-        <h2>Similar Diseases</h2>
-        <ul>
-          {% for disease in result['similar_diseases'] %}
-            <li><u><strong>{{ disease['disease'] }}:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
-          {% endfor %}
-        </ul>
+          <h2>Similar Diseases</h2>
+          <ul>
+              {% for disease in result['similar_diseases'] %}
+                  <li><u><strong><a href="#" class="disease-link" onclick="handleDiseaseLinkClick(`{{ disease['disease'] }}`)">{{ disease['disease'] }}</a>:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
+              {% endfor %}
+          </ul>
       </div>
       {% endif %}
-    </div>
-  </body>
+  </div>
+</body>
 </html>

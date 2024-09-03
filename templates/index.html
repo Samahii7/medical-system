@@ -162,7 +162,7 @@
           <h2>Similar Diseases</h2>
           <ul>
               {% for disease in result['similar_diseases'] %}
-                  <li><u><strong><a href="#" class="disease-link" onclick="handleDiseaseLinkClick(`{{ disease['disease'] }}`)">{{ disease['disease'] }}</a>:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
+                  <li><u><strong><a href="#" class="disease-link" onclick="searchGoogle(`{{ disease['disease'] }}`)">{{ disease['disease'] }}</a>:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
               {% endfor %}
           </ul>
       </div>
